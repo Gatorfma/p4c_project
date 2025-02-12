@@ -359,6 +359,7 @@ body {
     background: var(--white);
     border-radius: 8px;
     margin-top: 10px;
+    overflow: hidden;
 }
 
 .session-info p {
@@ -369,6 +370,35 @@ body {
 .session-info p strong {
     color: var(--primary-color);
     margin-right: 5px;
+}
+
+.detailed-content {
+    margin-top: 15px;
+}
+
+.content-list {
+    margin: 10px 0;
+    padding-left: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.content-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    color: var(--text-color);
+}
+
+.content-list li::before {
+    content: "•";
+    color: var(--secondary-color);
+    font-size: 20px;
+    position: absolute;
+    left: 8px;
+    top: -2px;
+    font-weight: bold;
 }
 
 /* Hover effects */
@@ -388,15 +418,15 @@ body {
     }
 
     .session-info {
-        padding: 10px;
+        padding: 12px;
     }
 
-    .session-time {
-        font-size: 1rem;
+    .content-list li {
+        padding-left: 20px;
     }
 
-    .session-details h4 {
-        font-size: 1.1rem;
+    .content-list li::before {
+        left: 5px;
     }
 }
 
