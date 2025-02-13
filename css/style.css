@@ -533,3 +533,39 @@ body {
         font-size: 1rem;
     }
 }
+
+/* Additional styling for kurullar section */
+.kurul-item ul li small {
+    display: block;
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 3px;
+    margin-left: 0;
+    line-height: 1.4;
+}
+
+.kurul-item ul li {
+    margin-bottom: 20px;
+    /* Increased spacing between members */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.logo-img {
+    max-height: 50px;
+    /* Adjust this value based on your logo size */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Responsive adjustment for logo */
+@media (max-width: 768px) {
+    .logo-img {
+        max-height: 40px;
+        /* Slightly smaller on mobile */
+    }
+}
